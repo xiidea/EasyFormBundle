@@ -1,0 +1,9 @@
+parameters:
+    xiidea_easy_form.hidden_entity.class: Xiidea\EasyFormBundle\Form\Type\HiddenEntityType
+
+services:
+ xiidea.form.type.hidden_entity:
+   class: %xiidea_easy_form.hidden_entity.class%
+   arguments: ["@doctrine.orm.entity_manager"]
+   tags:
+   - { name: form.type, alias: hidden_entity }

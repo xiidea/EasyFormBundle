@@ -1,0 +1,31 @@
+{
+  "name": "xiidea/easy-form-bundle",
+  "type": "symfony2-bundle",
+  "description": "A Symfony2 Bundle provide some extra form types.",
+  "keywords": [
+    "Hidden Entity",
+    "Symfony2",
+    "Form Type"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roni Saha",
+      "email": "roni.cse@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/xiidea/EasyFormBundle/issues",
+    "source": "https://github.com/xiidea/EasyFormBundle"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "symfony/symfony": ">=2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Xiidea\\EasyFormBundle\\": ""
+    }
+  }
+}
