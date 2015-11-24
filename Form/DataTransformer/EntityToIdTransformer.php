@@ -30,6 +30,10 @@ class EntityToIdTransformer implements DataTransformerInterface
             return null;
         }
 
+        if(!is_object($entity)) {
+            return $entity;
+        }
+
         return $this->getId($entity);
     }
 
