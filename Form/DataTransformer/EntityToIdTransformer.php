@@ -42,7 +42,7 @@ class EntityToIdTransformer implements DataTransformerInterface
         $meta = $this->objectManager->getClassMetadata(get_class($entity));
         $identifier = $meta->getIdentifierValues($entity);
 
-        return $identifier[0];
+        return array_values($identifier)[0];
     }
 
     public function reverseTransform($id)
